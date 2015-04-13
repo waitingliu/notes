@@ -1,6 +1,7 @@
 package objClone;
 
 public class Person implements Cloneable{
+	//注意:覆盖Object.clone()方法必须实现Cloneable接口,否则会在运行时抛出CloneNotSupportedException异常
 	int age;
 	String name;
 	Pen pen = new Pen();
