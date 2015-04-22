@@ -27,6 +27,9 @@
 ![](tcp1.jpg)
 * 对于建链接的3次握手:主要是要初始化Sequence Number 的初始值。通信的双方要互相通知对方自己的初始化的Sequence Number（缩写为ISN：Inital Sequence Number）——所以叫SYN，全称Synchronize Sequence Numbers。也就上图中的 x 和 y。这个号要作为以后的数据通信的序号，以保证应用层接收到的数据不会因为网络上的传输的问题而乱序（TCP会用这个序号来拼接数据）。
 
+三次握手图:
+![](tcp5.png)
+
 同时打开TCP链接如下图:
 
 ![](tcp4.gif)
